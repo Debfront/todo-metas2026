@@ -1,26 +1,44 @@
+// TODO: Esses estilos estavam sendo carregados no componente APP (Componentização)
+// TODO: Utilizar os estilos dentro do componente e não chamar em componentes externos
+// .cards {
+//   margin-top: 10px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 55px;
+//   width: 100%;
+
+//   background-color: white;
+
+//   .cardPessoal,
+//   .cardCarreira {
+//     background-color: #fff;
+//     border-radius: 10px;
+//     padding: 20px 32px;
+//   }
+// }
 
 
-.cards{
+//? Alteração
+.cards {
+  background-color: white;
 
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 55px;
-     width: 100%; 
-    height: 25%;
+  padding: 20px 90px;
+  border-radius: 20px;
 
-    .cardPessoal, .cardCarreira{
-    width: 100%; 
-    height: 75%;
-        background-color: #fff;
-         border-radius: 10px;
-         padding: 20px;
+  width: 30vw;
+  height: 13vh;
 
+  margin-bottom: 14px;
+
+  .card {
+    padding: 17px 70px;
+    background-color: #f0dfdf;
+    width: 20vw;
+    border: none;
+    border-radius: 20px;
+
+    font-size: 18px;
+    cursor: pointer;
+  }
 }
-    
-}
-    
-
-    
-

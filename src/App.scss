@@ -5,42 +5,73 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background-color: #e9aecd;
-}
+// body {
+//   background-color: #e9aecd;
+// }
 
 main {
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 0px 25px 0px 25px;
+  padding: 12px 25px;
+
+  background-color: #e9aecd;
 
   p {
     color: #fff;
     font-weight: bold;
     font-size: 24px;
     text-align: center;
+    margin-bottom: 80px;
   }
 }
 
-input {
-  margin-top: 15px;
-  width: 100%;
-  height: 15%;
-  background-color: #f0dfdf;
-  border: none;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 1.3rem;
+//? Foi onde eu chamei pra que a estilização funcione
+//? A estilização só funciona no componente que eu crio e chamo
+// .cards {
+//   margin-top: 10px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 55px;
+//   width: 100%;
+
+//   background-color: white;
+
+//   .cardPessoal,
+//   .cardCarreira {
+//     background-color: #fff;
+//     border-radius: 10px;
+//     padding: 20px 32px;
+//   }
+// }
+
+// input {
+//   margin-top: 15px;
+//   width: 100%;
+//   height: 15%;
+//   background-color: #f0dfdf;
+//   border: none;
+//   padding: 20px;
+//   border-radius: 10px;
+//   font-size: 1.3rem;
+//   cursor: pointer; // só pra sensação de click pro usuário
+// }
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 59px;
 }
 
 footer {
-  display: flex;
-  width: 100vw;
-  height: 70px;
+  // display: flex;
+  // width: 100vw; // já ocupa 100% por padrão
+  // height: 70px;
   background-color: #fff;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
+  // justify-content: center;
+  // align-items: center;
+  // font-size: 24px;
   color: #100101;
 }

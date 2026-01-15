@@ -1,5 +1,5 @@
-import Card from "./components/Card";
-import Titulo from "./components/Titulo";
+import Card from "./components/Card/Card";
+import Titulo from "./components/Titulo/Titulo";
 
 function App() {
   return (
@@ -12,7 +12,10 @@ function App() {
           sonhos <br /> em realidade.
         </p>
 
-        <div className={"cards"}>
+        {/* Estrutura HTML */}
+        {/* Lembrar que o flexbox é aplicado no elemento pai e passado para os filhos */}
+        {/* Não colocar tanta div = pode confundir */}
+        {/* <div className={"cards"}>
           <div className={"cardPessoal"}>
             <Card title="Pessoal" />
           </div>
@@ -20,9 +23,16 @@ function App() {
           <div className={"cardCarreira"}>
             <Card title="Carreira" />
           </div>
-        </div>
-      </main>
+        </div> */}
 
+        {/* Alteração*/}
+        {/* elemento pai */}
+        <section>
+          {/* Elementos filhos */}
+          <Card title="Pessoal" />
+          <Card title="Carreira" />
+        </section>
+      </main>
       <footer>O futuro pertence aqueles que acreditam nos seus sonhos!</footer>
     </>
   );

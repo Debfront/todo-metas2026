@@ -1,14 +1,12 @@
-h1{
-    color: antiquewhite;
+h1 {
+  color: antiquewhite;
+  font-weight: 300;
+  text-align: center;
+  font-size: 64px;
+
+  span {
+    color: #fbdb0d;
+    display: block;
     font-weight: 300;
-    text-align: center;
-    font-size: 64px;
-
-
-
-    span{
-        color: #FBDB0D;
-      display: block;
-      font-weight: 300;
-    }
+  }
 }
