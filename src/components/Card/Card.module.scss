@@ -1,44 +1,194 @@
-// TODO: Esses estilos estavam sendo carregados no componente APP (Componentização)
-// TODO: Utilizar os estilos dentro do componente e não chamar em componentes externos
-// .cards {
-//   margin-top: 10px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 55px;
-//   width: 100%;
-
-//   background-color: white;
-
-//   .cardPessoal,
-//   .cardCarreira {
-//     background-color: #fff;
-//     border-radius: 10px;
-//     padding: 20px 32px;
-//   }
-// }
-
-
-//? Alteração
 .cards {
-  background-color: white;
-
-  padding: 20px 90px;
+  background: white;
   border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-  width: 30vw;
-  height: 13vh;
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+  }
+}
 
-  margin-bottom: 14px;
+.card {
+  background: #e8d4dd;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #333;
 
-  .card {
-    padding: 17px 70px;
-    background-color: #f0dfdf;
-    width: 20vw;
-    border: none;
-    border-radius: 20px;
+  &:hover {
+    background: #dcc5cf;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-    font-size: 18px;
-    cursor: pointer;
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.taskInput {
+  padding: 12px 16px;
+  border: 2px solid #e8d4dd;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: #c9a8b8;
+  }
+
+  &::placeholder {
+    color: #aaa;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.addBtn,
+.cancelBtn {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addBtn {
+  background: #e8d4dd;
+  color: #333;
+
+  &:hover {
+    background: #dcc5cf;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.cancelBtn {
+  background: #f5f5f5;
+  color: #666;
+
+  &:hover {
+    background: #e0e0e0;
+  }
+}
+
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  animation: slideIn 0.3s ease;
+
+  &:hover {
+    background: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.taskContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+
+  span {
+    font-size: 0.95rem;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #c9a8b8;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999 !important;
+  opacity: 0.6;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+
+  &:hover {
+    color: #ff6b6b;
+    background: #ffe0e0;
   }
 }
