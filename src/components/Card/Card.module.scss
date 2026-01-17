@@ -1,5 +1,4 @@
 .cards {
-
   background-color: white;
 
   padding: 20px 90px;
@@ -59,11 +58,18 @@
   }
 }
 
-  width: 30vw;
-  height: 17vh;
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
 
   &:focus {
     border-color: #c9a8b8;
+    outline: none;
   }
 
   &::placeholder {
