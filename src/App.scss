@@ -13,16 +13,16 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 12px 25px;
+  padding: 0.75rem 1.5625rem;
 
   background-color: #e9aecd;
 
   p {
     color: #fff;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
   }
 }
 
@@ -62,7 +62,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 59px;
+  gap: 3.6875rem;
 }
 
 footer {
