@@ -2,11 +2,50 @@ h1 {
   color: antiquewhite;
   font-weight: 300;
   text-align: center;
-  font-size: 4rem;
+  font-size: 2rem;
+  margin: 1.5rem 0 0 0;
+  line-height: 1.2;
 
   span {
     color: #fbdb0d;
     display: block;
     font-weight: 300;
+    margin-top: 0.5rem;
+  }
+}
+
+// Responsivo - Mobile
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+
+    span {
+      margin-top: 0.3rem;
+    }
+  }
+}
+
+// Responsivo - Tablet
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    margin: 1.25rem 0 0 0;
+
+    span {
+      margin-top: 0.4rem;
+    }
+  }
+}
+
+// Responsivo - Desktop
+@media (min-width: 769px) {
+  h1 {
+    font-size: 4rem;
+    margin: 1.5rem 0 0 0;
+
+    span {
+      margin-top: 0.5rem;
+    }
   }
 }

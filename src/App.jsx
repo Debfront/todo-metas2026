@@ -1,4 +1,5 @@
 import Card from "./components/Card/Card";
+import Footer from "./components/Footer/Footer";
 import Titulo from "./components/Titulo/Titulo";
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
           <Card title="Carreira" />
         </section>
       </main>
-      <footer>O futuro pertence aqueles que acreditam nos seus sonhos!</footer>
+      <Footer/>
     </>
   );
 }

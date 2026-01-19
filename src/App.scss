@@ -5,24 +5,33 @@
   font-family: "Poppins", sans-serif;
 }
 
+// Reset padrão para melhor responsividade
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 // body {
 //   background-color: #e9aecd;
 // }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 0.75rem 1.5625rem;
-
+  padding: 1rem;
   background-color: #e9aecd;
 
   p {
     color: #fff;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
   }
 }
 
@@ -60,18 +69,58 @@ main {
 
 section {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
-  gap: 3.6875rem;
+  gap: 1.5rem;
+  width: 100%;
 }
 
-footer {
-  // display: flex;
-  // width: 100vw; // já ocupa 100% por padrão
-  // height: 70px;
-  background-color: #fff;
-  // justify-content: center;
-  // align-items: center;
-  // font-size: 24px;
-  color: #100101;
+// Responsivo - Mobile
+@media (max-width: 480px) {
+  main {
+    padding: 0.75rem 0.5rem;
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  section {
+    gap: 1rem;
+  }
+}
+
+// Responsivo - Tablet
+@media (min-width: 481px) and (max-width: 768px) {
+  main {
+    padding: 1.25rem;
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  section {
+    gap: 2rem;
+  }
+}
+
+// Responsivo - Desktop
+@media (min-width: 769px) {
+  main {
+    padding: 1.5625rem;
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  section {
+    gap: 3.6875rem;
+    flex-wrap: nowrap;
+  }
 }
